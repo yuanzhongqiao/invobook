@@ -1,96 +1,87 @@
-# InvoBook
-
-Self-hosted app for Time Tracking, Invoice Generation, Project & Client Management, built with Laravel & Filament.
-
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">收据簿</font></font></h1><a id="user-content-invobook" class="anchor" aria-label="永久链接： InvoBook" href="#invobook"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于时间跟踪、发票生成、项目和客户管理的自托管应用程序，使用 Laravel 和 Filament 构建。</font></font></p>
 <hr>
-
-
-<p align="center">
-    <a href="https://github.com/iluminar/invobook/blob/dev/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?style=for-the-badge"></a>
-    <a href="https://github.com/filamentphp/filament/actions"><img alt="Tests passing" src="https://img.shields.io/badge/Tests-passing-green?style=for-the-badge&logo=github"></a>
-    <a href="https://laravel.com"><img alt="Laravel v10.x" src="https://img.shields.io/badge/Laravel-v10.x-FF2D20?style=for-the-badge&logo=laravel"></a>
-    <a href="https://livewire.laravel.com"><img alt="Livewire v3.x" src="https://img.shields.io/badge/Livewire-v3.x-FB70A9?style=for-the-badge"></a>
-    <a href="https://php.net"><img alt="PHP 8.1" src="https://img.shields.io/badge/PHP-8.1-777BB4?style=for-the-badge&logo=php"></a>
+<p align="center" dir="auto">
+    <a href="https://github.com/iluminar/invobook/blob/dev/LICENSE"><img alt="执照" src="https://camo.githubusercontent.com/8b9ea124aa62ab482ab9920154d73a2c61dccf0e1ac9abb6a1cff7a1d510c6a3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d627269676874677265656e3f7374796c653d666f722d7468652d6261646765" data-canonical-src="https://img.shields.io/badge/license-MIT-brightgreen?style=for-the-badge" style="max-width: 100%;"></a>
+    <a href="https://github.com/filamentphp/filament/actions"><img alt="测试通过" src="https://camo.githubusercontent.com/d154c3aa5a534ba8179bbd67f3bbe255238138196171abd94f377dada409ea6b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f54657374732d70617373696e672d677265656e3f7374796c653d666f722d7468652d6261646765266c6f676f3d676974687562" data-canonical-src="https://img.shields.io/badge/Tests-passing-green?style=for-the-badge&amp;logo=github" style="max-width: 100%;"></a>
+    <a href="https://laravel.com" rel="nofollow"><img alt="Laravel v10.x" src="https://camo.githubusercontent.com/1289fdba6c14ef18e10abb5a129578b15ce04006708a0d99bc62838d929a7fbc/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c61726176656c2d7631302e782d4646324432303f7374796c653d666f722d7468652d6261646765266c6f676f3d6c61726176656c" data-canonical-src="https://img.shields.io/badge/Laravel-v10.x-FF2D20?style=for-the-badge&amp;logo=laravel" style="max-width: 100%;"></a>
+    <a href="https://livewire.laravel.com" rel="nofollow"><img alt="活线 v3.x" src="https://camo.githubusercontent.com/0874e1ffbf9b3813e3b22f26f27682392a0febbcd6f43e693d791dc227ee8eb7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4c697665776972652d76332e782d4642373041393f7374796c653d666f722d7468652d6261646765" data-canonical-src="https://img.shields.io/badge/Livewire-v3.x-FB70A9?style=for-the-badge" style="max-width: 100%;"></a>
+    <a href="https://php.net" rel="nofollow"><img alt="PHP 8.1" src="https://camo.githubusercontent.com/ff31f0c1c22dd5823c3caed66fcc1978f254dc501e074b7304d6f168dee0c56d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5048502d382e312d3737374242343f7374796c653d666f722d7468652d6261646765266c6f676f3d706870" data-canonical-src="https://img.shields.io/badge/PHP-8.1-777BB4?style=for-the-badge&amp;logo=php" style="max-width: 100%;"></a>
 </p>
-
-## Hire me
-
-I'm available for contractual work on this stack (Filament, Laravel, Livewire, AlpineJS, TailwindCSS). Reach me via [email](mailto:searching.nehal@gmail.com) or [discord](https://discordapp.com/users/297318343642447872)
-
-## About Invobook
-
-Invobook is a self-hosted app to manage team/clients, project & tasks, time tracking, create and sending invoice and more. It is build upon Filament and TALL stack.
-
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">雇用我</font></font></h2><a id="user-content-hire-me" class="anchor" aria-label="永久链接：雇用我" href="#hire-me"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我可以参与此堆栈（Filament、Laravel、Livewire、AlpineJS、TailwindCSS）的合同工作。通过</font></font><a href="mailto:searching.nehal@gmail.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电子邮件</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或</font><a href="https://discordapp.com/users/297318343642447872" rel="nofollow"><font style="vertical-align: inherit;">不和谐</font></a><font style="vertical-align: inherit;">联系我</font></font><a href="https://discordapp.com/users/297318343642447872" rel="nofollow"><font style="vertical-align: inherit;"></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于 Invobook</font></font></h2><a id="user-content-about-invobook" class="anchor" aria-label="永久链接：关于 Invobook" href="#about-invobook"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Invobook 是一款自托管应用程序，用于管理团队/客户、项目和任务、时间跟踪、创建和发送发票等。它是建立在灯丝和 TALL 堆栈之上的。</font></font></p>
 <hr>
-<p align="center">
-<b><a href="#installation">Installation</a></b>
+<p align="center" dir="auto">
+<b><a href="#installation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></a></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
 |
-<b><a href="#screenshots-top">Screenshots</a></b>
+</font></font><b><a href="#screenshots-top"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">截图</font></font></a></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
 |
-<b><a href="#contributing-top">Contributing</a></b>
+</font></font><b><a href="#contributing-top"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></a></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
 |
-<b><a href="#supporting-top">Supporting</a></b>
+</font></font><b><a href="#supporting-top"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持</font></font></a></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
 |
-<b><a href="#credits-top">Credits</a></b>
+</font></font><b><a href="#credits-top"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">学分</font></font></a></b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
 |
-<b><a href="#license-top">License</a></b>
+</font></font><b><a href="#license-top"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></a></b>
 </p>
-
 <hr>
-
-
-## Installation
-
-Clone the repository
-
-```sh
-git clone git@github.com:Hasnayeen/invobook.git
-```
-
-Set env variables
-
-```sh
-cp .env.example .env
-```
-
-Install composer packages
-
-```sh
-composer install
-```
-
-## Screenshots <small>[↑Top](#about-invobook)</small>
-
-![Dashboard]()
-
-## Contributing <small>[↑Top](#about-invobook)</small>
-
-To contribute join discord server [link](https://discord.gg/4DvTQsc)
-
-## Supporting <small>[↑Top](#about-invobook)</small>
-
-### Be a sponsor
-
-Invobook is an MIT-licensed open source project with its ongoing development made possible thanks to the support by our amazing backers.
-
-Support the development of "Invobook" by being a sponsor, reach at <searching.nehal@gmail.com>
-
-
-### Professional Support
-
-If you need professional support or custom functioanlity please send an e-mail to <searching.nehal@gmail.com>.
-
-## Security Vulnerabilities <small>[↑Top](#about-invobook)</small>
-
-If you discover a security vulnerability within Invobook, please send an e-mail to <searching.nehal@gmail.com> instead of creating new issue. All security vulnerabilities will be promptly addressed.
-
-## Credits <small>[↑Top](#about-invobook)</small>
-
-- Author: [Nehal Hasnayeen](https://github.com/Hasnayeen) (<https://hasnayeen.github.io>)
-
-- [Full Contributors List](https://github.com/iluminar/invobook/graphs/contributors)
-
-
-## License <small>[↑Top](#about-invobook)</small>
-
-Invobook is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></h2><a id="user-content-installation" class="anchor" aria-label="永久链接：安装" href="#installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">克隆存储库</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>git clone git@github.com:Hasnayeen/invobook.git</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone git@github.com:Hasnayeen/invobook.git" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设置环境变量</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>cp .env.example .env</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="cp .env.example .env" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装作曲家包</font></font></p>
+<div class="highlight highlight-source-shell notranslate position-relative overflow-auto" dir="auto"><pre>composer install</pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="composer install" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">截图</font></font><a href="#about-invobook"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">↑顶部</font></font></a></h2><a id="user-content-screenshots-top" class="anchor" aria-label="永久链接： 截图 ↑顶部" href="#screenshots-top"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="/Hasnayeen/invobook/blob/main"><img src="/Hasnayeen/invobook/raw/main" alt="仪表板" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font><a href="#about-invobook"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">↑顶部</font></font></a></h2><a id="user-content-contributing-top" class="anchor" aria-label="永久链接：贡献↑顶部" href="#contributing-top"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献加入不和谐服务器的</font></font><a href="https://discord.gg/4DvTQsc" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">链接</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">支持</font></font><a href="#about-invobook"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">↑顶</font></font></a></h2><a id="user-content-supporting-top" class="anchor" aria-label="永久链接：支持↑顶" href="#supporting-top"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">成为赞助商</font></font></h3><a id="user-content-be-a-sponsor" class="anchor" aria-label="永久链接：成为赞助商" href="#be-a-sponsor"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Invobook 是一个 MIT 许可的开源项目，由于我们出色的支持者的支持，它的持续开发才得以实现。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过成为赞助商支持“Invobook”的发展，联系方式为</font></font><a href="mailto:searching.nehal@gmail.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">searching.nehal@gmail.com</font></font></a></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">专业支持</font></font></h3><a id="user-content-professional-support" class="anchor" aria-label="永久链接：专业支持" href="#professional-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您需要专业支持或自定义功能，请发送电子邮件至</font></font><a href="mailto:searching.nehal@gmail.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">searching.nehal@gmail.com</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安全漏洞</font></font><a href="#about-invobook"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">↑顶部</font></font></a></h2><a id="user-content-security-vulnerabilities-top" class="anchor" aria-label="永久链接：安全漏洞 ↑顶部" href="#security-vulnerabilities-top"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您发现 Invobook 中存在安全漏洞，请发送电子邮件至</font></font><a href="mailto:searching.nehal@gmail.com"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Searching.nehal@gmail.com</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，而不是创建新问题。所有安全漏洞都将得到及时解决。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">制作人员</font></font><a href="#about-invobook"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">↑顶部</font></font></a></h2><a id="user-content-credits-top" class="anchor" aria-label="永久链接：制作人员 ↑顶部" href="#credits-top"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">作者：</font></font><a href="https://github.com/Hasnayeen"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nehal Hasnayeen</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ( </font></font><a href="https://hasnayeen.github.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://hasnayeen.github.io</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> )</font></font></p>
+</li>
+<li>
+<p dir="auto"><a href="https://github.com/iluminar/invobook/graphs/contributors"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">完整贡献者列表</font></font></a></p>
+</li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">许可证</font></font><a href="#about-invobook"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">↑顶部</font></font></a></h2><a id="user-content-license-top" class="anchor" aria-label="永久链接：许可证 ↑顶部" href="#license-top"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="http://opensource.org/licenses/MIT" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Invobook 是根据MIT 许可证</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">授权的开源软件</font><font style="vertical-align: inherit;">。</font></font></p>
+</article></div>
